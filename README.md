@@ -35,3 +35,9 @@ docker-compose -f local.yml up
 ```
 
 Now you can visit UI (where there's nothing really) on ports 3000 and 8000 and send API requests to `/api/tasks/` on the same ports
+
+### Administrative commands
+
+```bash 
+docker-compose -f local.yml run --rm django < command to execute on container eg: python manage.py createsuperuser>
+```
